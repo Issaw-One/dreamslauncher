@@ -1,6 +1,16 @@
 {
   "version": "1.0.0",
+  "meta": {
+    "serverName": "Dreams Launcher",
+    "serverDescription": "Launcher du serveur Dreams Faction",
+    "serverIcon": "default"
+  },
+  "authentication": {
+    "clientToken": "dreams-client-token"
+  },
+
   "mainServer": "dreams",
+
   "servers": {
     "dreams": {
       "name": "Dreams Faction",
@@ -10,10 +20,12 @@
       "address": "localhost",
       "port": 25565,
       "minecraftVersion": "1.21.8",
+
       "loader": {
         "type": "fabric",
         "version": "0.18.1"
       },
+
       "modules": [
         {
           "name": "DreamsFactionPack",
@@ -24,33 +36,28 @@
             "type": "zip",
             "url": "https://raw.githubusercontent.com/Issaw-One/dreamslauncher/main/DreamsFactionPack2.zip"
           }
-        },
-        {
-          "name": "fabric-api",
-          "type": "addon",
-          "required": true,
-          "file": "fabric-api-0.134.0+1.21.8.jar"
-        },
-        {
-          "name": "lithium",
-          "type": "addon",
-          "required": true,
-          "file": "lithium-fabric-0.18.1+mc1.21.8.jar"
-        },
-        {
-          "name": "sodium",
-          "type": "addon",
-          "required": true,
-          "file": "sodium-fabric-0.7.2+mc1.21.8.jar"
         }
       ]
     }
   },
+
   "modules": {
     "java": {
-      "recommended": true,
+      "type": "jre",
+      "name": "java17",
       "version": "17",
-      "vendor": "Microsoft"
+      "vendor": "Microsoft",
+      "recommended": true
+    },
+
+    "minecraft": {
+      "version": "1.21.8",
+      "type": "game"
+    },
+
+    "fabric": {
+      "version": "0.18.1",
+      "type": "loader"
     }
   }
 }
