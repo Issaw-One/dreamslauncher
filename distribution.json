@@ -13,7 +13,7 @@
     "modpack": {
       "name": "DreamsFactionPack",
       "version": "1.0.0",
-      "url": "https://raw.githubusercontent.com/Issaw-One/dreamslauncher/main/DreamsFactionPack.zip",
+      "url": "https://raw.githubusercontent.com/Issaw-One/dreamslauncher/main/DreamsFactionPack2.zip",
       "hash": ""
     }
   },
@@ -23,6 +23,7 @@
     "autoconnect": true
   }
 }
+
 
 
 
