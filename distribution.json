@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "serverName": "Dream's Faction",
+    "description": "Launcher officiel de Dream's Faction",
+    "version": "1.0.0"
+  },
+  "client": {
+    "version": "1.21.1",
+    "loader": {
+      "type": "fabric",
+      "version": "0.18.0"
+    },
+    "modpack": {
+      "name": "DreamsFactionPack",
+      "version": "1.0.0",
+      "url": "https://links.flixium.site/DreamsFactionPack.zip",
+      "hash": ""
+    }
+  },
+  "server": {
+    "ip": "play.dreamsfaction.fr",
+    "port": 25565,
+    "autoconnect": true
+  }
+}
